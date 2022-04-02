@@ -125,7 +125,7 @@ public class HelloApplication extends Application{
 
 
                 String query = String.format("INSERT INTO scrapedtable (ID,Title,Price,Link) VALUES (%d,'%s','%s','%s');",id,items.title,items.price,items.link);
-              //  int count = statementLoadAllData.executeUpdate(query);
+               int count = statementLoadAllData.executeUpdate(query);
                 booksExpressLayout.add(new Label(items.title),1,i+3);
                 booksExpressLayout.add(new Label(items.price),2,i+3);
                 booksExpressLayout.add(flow,3,i+3);
@@ -153,7 +153,7 @@ public class HelloApplication extends Application{
                 );
 
                 String query = String.format("INSERT INTO scrapedtable (ID,Title,Price,Link) VALUES (%d,'%s','%s','%s');",id,items.title,items.price,items.link);
-            //    int count = statementLoadAllData.executeUpdate(query);
+              int count = statementLoadAllData.executeUpdate(query);
 
 
                 emagLayout.add(new Label(items.title),1,i+3);
@@ -184,7 +184,7 @@ public class HelloApplication extends Application{
                 );
 
                 String query = String.format("INSERT INTO scrapedtable (ID,Title,Price,Link) VALUES (%d,'%s','%s','%s');",id,items.title,items.price,items.link);
-            //    int count = statementLoadAllData.executeUpdate(query);
+              int count = statementLoadAllData.executeUpdate(query);
                 olxLayout.add(new Label(items.title),1,i+3);
                 olxLayout.add(new Label(items.price),2,i+3);
                 olxLayout.add(flow,3,i+3);
